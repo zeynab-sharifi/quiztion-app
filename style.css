@@ -1,0 +1,129 @@
+:root{
+	background-color: rgba(29, 26, 26);
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+body{
+	color: #fff;
+	font-family: Vazir;
+}
+h1{
+	color: #fff;
+	margin-bottom: 3rem;
+	font-size: 5rem;
+}
+h2{
+	color: #fff;
+	margin-bottom: 2rem;
+}
+.container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 88rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+.flex-colum{
+	display: flex;
+	flex-direction: column;
+}
+.flex-center{
+	justify-content: center;
+	align-items: center;
+}
+.justify-content{
+	justify-content: center;
+}
+.text-center{
+	text-align: center;
+}
+.hidden{
+	display: none;
+}
+.btn{
+	font-size: 20px;
+	padding: 1rem 0;
+	width: 170px;
+	text-align: center;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: #fff;
+	background: linear-gradient(#e66465, #9198e5);
+	border-radius: 4px;
+}
+.btn:hover{
+	cursor: pointer;
+	box-shadow: rgba(226, 102, 106,0.5);
+	background: #e66465;
+	transition: transform 180ms;
+	transform: scale(1.03);
+}
+.btn[disabeled]:hover{
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+}
+.choice-container{
+	display: flex;
+	margin: 0.8rem 0;
+	width: 100%;
+	border-radius: 4px;
+	background: linear-gradient(#e66465, #9198e5);
+	font-size: 2rem;
+	min-width: 60rem;
+}
+.choice-container:hover{
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, .16);
+	transform: scale(1.02);
+	transform: transform 100ms;
+}
+.choice-perfix{
+	padding: 1rem 1.5rem;
+	color: #fff;
+}
+.choice-text{
+	padding: 1rem;
+	width: 100%;
+}
+.correct{
+	background: linear-gradient(#e66465, #9198e5);
+}
+.incorrect{
+	background: linear-gradient(to right, red , yellow);
+}
+#hud{
+	display: flex;
+	justify-content: space-between;
+}
+.hud-prefix{
+	text-align: center;
+	font-size: 1rem;
+}
+.hud-main-text{
+	text-align: center;
+}
+#progressBar{
+	width: 55rem;
+	height: 3rem;
+	border: .2rem solid red;
+	margin-top: 2rem;
+	border-radius: 50px;
+	overflow: hidden;	
+}
+#progressBarFull{
+	height: 100%;
+	background: linear-gradient(to right, red , yellow);
+	width: 0%;
+}
+
+@media screen and (max-width: 768px){
+	.choice-container{
+		min-width: 30rem;
+	}
+}
